@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Inicial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         *{
+            animation: bounceInUp 2s;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -68,17 +70,13 @@
                 margin: 0 -35px 0 35px;
             }
         }
-        .brigas{
+        .carregando{
+
+            animation: zoomInDown 2s;
+            height: 30px;
+            width: 30px;
+            top: 53vh;
             position: absolute;
-            top: 0px;
-            left: 0px;
-            animation: gira 3s linear;
-        }
-        @keyframes gira{
-            100%{
-                0% { rotate: 0deg;}
-                100% {rotate: 360deg;}
-            }
         }
     </style>
 </head>
@@ -89,6 +87,6 @@
             <li><span>Brigadeiro</span></li>
         </ul>
     </div>
-    <img src="brigadeiro.png" class="brigas"> 
+    <img src="carrega.gif" img class="carregando">
 </body>
 </html>
