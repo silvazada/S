@@ -20,22 +20,26 @@
             justify-content: center;
             min-height: 100vh;
             background: #111111;
+            z-index: 2;
 
         }
         .aglomero{
             display: inline-flex;
+            z-index: 2;
 
         }
         .aglomero .estatico{
             color: #ffff;
             font-size: 35px;
             font-weight: 400;
+            z-index: 2;
         }
         .aglomero .dinamico{
             margin-left: 15px;
             line-height: 40px;
             height: 40px;
             overflow: hidden;
+            z-index: 2;
         }
         .dinamico li{
             color: #fc6d6d;
@@ -45,6 +49,7 @@
             left: 0;
             position: relative;
             animation: slide 6s steps(1) ;
+            z-index: 2;
         }
         @keyframes slide{
             100%{
@@ -60,6 +65,7 @@
             border-left: 2px solid #fc6d6d;
             animation: typing 1.5s steps(10) infinite;
             background: #111111;
+            z-index: 2;
         }
         .dinamico li span{
             position: relative;
@@ -77,7 +83,13 @@
             width: 30px;
             top: 53vh;
             position: absolute;
+            z-index: 2;
             
+        }
+        .brigas{
+            z-index: 1;
+            position: absolute;
+            opacity: 0.3;
         }
     </style>
 </head>
@@ -89,5 +101,6 @@
         </ul>
     </div>
     <img src="carrega.gif" img class="carregando">
+    <img src="brigas.png" img class="brigas">
 </body>
 </html>
